@@ -22,7 +22,7 @@ You can use the website to generate badges: https://shields.io/
 <!-- Any image aligned to the right. Beware the width -->
 
 
-- :star: I'm currently learning [STM32MP157](https://github.com/GoKo-Son626/STM32MP157);
+- :star: I'm currently learning [linux](https://github.com/GoKo-Son626/linux);
 - :computer:I want to find an internship about embedded system
 - :email: Welcome to reach me: [@126.com](wangshuqi626@126.com);
 
