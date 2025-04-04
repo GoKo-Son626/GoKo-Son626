@@ -7,7 +7,7 @@
 -->
 <!-- Your title -->
 
-#  Hi, I'm GoKo-Son, a Developer from China.
+#  Hi, I'm GoKo, a Developer from China.
 
 <!-- Your badges
 You can use the website to generate badges: https://shields.io/
