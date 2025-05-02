@@ -24,7 +24,7 @@ You can use the website to generate badges: https://shields.io/
 
 - :star: I'm currently learning [linux](https://github.com/GoKo-Son626/linux);
 - :computer:I want to find an internship about embedded system
-- :email: Welcome to reach me: <goku72.com>(goku72.com);
+- :email: Welcome to reach me: <goku72.com>(www.goku72.com);
 
 ## Technologies I'm Learning :pencil:
 
