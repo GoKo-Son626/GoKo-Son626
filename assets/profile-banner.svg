@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">GoKo — RTOS, RISC-V and ARM systems developer</title>
+  <desc id="desc">A dark circuit-board banner with a central processor and labels for RISC-V, ARM, RTOS, BSP and device drivers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1f35"/>
+      <stop offset="1" stop-color="#102944"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132f4c"/>
+      <stop offset="1" stop-color="#0b192b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f81f7"/>
+      <stop offset="1" stop-color="#39d98a"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#2f81f7" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="20" fill="url(#grid)"/>
+  <path d="M0 250C220 205 350 300 600 250S970 205 1200 250V320H0Z" fill="#2f81f7" opacity=".055"/>
+
+  <g fill="none" stroke="#2f81f7" stroke-width="2" stroke-opacity=".48">
+    <path d="M72 78H245L330 126H455"/><path d="M70 238H265L342 194H455"/>
+    <path d="M745 126H870L950 72H1126"/><path d="M745 194H900L978 246H1128"/>
+    <path d="M455 160H350L300 138H180"/><path d="M745 160H850L900 182H1020"/>
+  </g>
+  <g fill="#39d98a" filter="url(#glow)">
+    <circle cx="72" cy="78" r="4"/><circle cx="70" cy="238" r="4"/><circle cx="1126" cy="72" r="4"/><circle cx="1128" cy="246" r="4"/>
+    <circle cx="180" cy="138" r="4"/><circle cx="1020" cy="182" r="4"/>
+  </g>
+
+  <g>
+    <rect x="455" y="68" width="290" height="184" rx="18" fill="url(#chip)" stroke="url(#accent)" stroke-width="3"/>
+    <rect x="478" y="91" width="244" height="138" rx="11" fill="#07111f" stroke="#2f81f7" stroke-opacity=".45"/>
+    <g fill="#39d98a">
+      <rect x="438" y="91" width="17" height="8" rx="2"/><rect x="438" y="119" width="17" height="8" rx="2"/><rect x="438" y="147" width="17" height="8" rx="2"/><rect x="438" y="175" width="17" height="8" rx="2"/><rect x="438" y="203" width="17" height="8" rx="2"/>
+      <rect x="745" y="91" width="17" height="8" rx="2"/><rect x="745" y="119" width="17" height="8" rx="2"/><rect x="745" y="147" width="17" height="8" rx="2"/><rect x="745" y="175" width="17" height="8" rx="2"/><rect x="745" y="203" width="17" height="8" rx="2"/>
+      <rect x="505" y="51" width="8" height="17" rx="2"/><rect x="549" y="51" width="8" height="17" rx="2"/><rect x="596" y="51" width="8" height="17" rx="2"/><rect x="643" y="51" width="8" height="17" rx="2"/><rect x="687" y="51" width="8" height="17" rx="2"/>
+      <rect x="505" y="252" width="8" height="17" rx="2"/><rect x="549" y="252" width="8" height="17" rx="2"/><rect x="596" y="252" width="8" height="17" rx="2"/><rect x="643" y="252" width="8" height="17" rx="2"/><rect x="687" y="252" width="8" height="17" rx="2"/>
+    </g>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <text x="600" y="147" fill="#f0f6fc" font-size="48" font-weight="700" letter-spacing="2">GoKo</text>
+    <text x="600" y="181" fill="#7ee2b8" font-size="17" font-weight="600" letter-spacing="4">RTOS • BSP • PORTING</text>
+    <text x="600" y="209" fill="#8bacc8" font-size="13" letter-spacing="2">FROM SILICON TO SCHEDULER</text>
+  </g>
+
+  <g font-family="JetBrains Mono,Consolas,monospace" font-size="16" font-weight="600">
+    <text x="75" y="66" fill="#8bacc8">RISC-V / K1</text>
+    <text x="74" y="228" fill="#8bacc8">IOMMU · GPIO · CLK</text>
+    <text x="955" y="60" fill="#8bacc8">ARMv7 / ARMv8</text>
+    <text x="980" y="235" fill="#8bacc8">I²C · I²S · CAN</text>
+    <text x="82" y="127" fill="#39d98a">IRQ</text>
+    <text x="1032" y="171" fill="#39d98a">SCHED</text>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="18.5" fill="none" stroke="#2f81f7" stroke-opacity=".35" stroke-width="3"/>
+</svg>
+
