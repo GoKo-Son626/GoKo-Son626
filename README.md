@@ -38,7 +38,7 @@ I work at the boundary between **processor architecture**, **operating-system ke
     </td>
     <td width="50%" valign="top">
       <h3>🧭 In progress</h3>
-      <p>ARMv7-A/Cortex-A9 RTOS porting, ARMv8 architecture study, and future CAN bus integration on RTOS.</p>
+      <p>ARMv7-A/Cortex-A9 RTOS porting, ARMv8 architecture study, and CAN bus integration on RTOS.</p>
     </td>
   </tr>
 </table>
