@@ -1,69 +1,91 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">GoKo — RTOS, RISC-V and ARM systems developer</title>
-  <desc id="desc">A dark circuit-board banner with a central processor and labels for RISC-V, ARM, RTOS, BSP and device drivers.</desc>
+  <desc id="desc">A flowing dark embedded-systems banner with cyan and emerald signal paths around a central RTOS core.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07111f"/>
-      <stop offset="0.55" stop-color="#0b1f35"/>
-      <stop offset="1" stop-color="#102944"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.52" stop-color="#07182a"/>
+      <stop offset="1" stop-color="#0b2442"/>
     </linearGradient>
-    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#132f4c"/>
-      <stop offset="1" stop-color="#0b192b"/>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.52" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2f81f7"/>
-      <stop offset="1" stop-color="#39d98a"/>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a46" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#06101f" stop-opacity=".98"/>
     </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#2f81f7" stroke-opacity=".08"/>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientTransform="translate(250 55) rotate(32) scale(420 240)">
+      <stop stop-color="#0ea5e9" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientTransform="translate(980 260) rotate(-148) scale(390 210)">
+      <stop stop-color="#10b981" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#7dd3fc" opacity=".11"/>
     </pattern>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000814" flood-opacity=".55"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="320" rx="20" fill="url(#bg)"/>
-  <rect width="1200" height="320" rx="20" fill="url(#grid)"/>
-  <path d="M0 250C220 205 350 300 600 250S970 205 1200 250V320H0Z" fill="#2f81f7" opacity=".055"/>
+  <rect width="1200" height="320" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#blueGlow)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#greenGlow)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#dots)"/>
 
-  <g fill="none" stroke="#2f81f7" stroke-width="2" stroke-opacity=".48">
-    <path d="M72 78H245L330 126H455"/><path d="M70 238H265L342 194H455"/>
-    <path d="M745 126H870L950 72H1126"/><path d="M745 194H900L978 246H1128"/>
-    <path d="M455 160H350L300 138H180"/><path d="M745 160H850L900 182H1020"/>
-  </g>
-  <g fill="#39d98a" filter="url(#glow)">
-    <circle cx="72" cy="78" r="4"/><circle cx="70" cy="238" r="4"/><circle cx="1126" cy="72" r="4"/><circle cx="1128" cy="246" r="4"/>
-    <circle cx="180" cy="138" r="4"/><circle cx="1020" cy="182" r="4"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M45 92C165 26 280 40 365 106S485 154 532 138" stroke="#38bdf8" stroke-width="2.5" opacity=".62"/>
+    <path d="M38 224C164 286 272 276 355 218S474 170 528 184" stroke="#22d3ee" stroke-width="2" opacity=".48"/>
+    <path d="M1155 76C1034 28 929 51 846 112S734 151 674 132" stroke="#34d399" stroke-width="2.5" opacity=".58"/>
+    <path d="M1162 236C1038 282 931 268 849 214S734 171 674 188" stroke="#38bdf8" stroke-width="2" opacity=".46"/>
+    <path d="M66 154C188 118 284 139 350 167S465 202 528 168" stroke="#0ea5e9" stroke-width="1.5" opacity=".32"/>
+    <path d="M1134 160C1022 122 924 137 851 166S742 200 674 166" stroke="#10b981" stroke-width="1.5" opacity=".32"/>
   </g>
 
-  <g>
-    <rect x="455" y="68" width="290" height="184" rx="18" fill="url(#chip)" stroke="url(#accent)" stroke-width="3"/>
-    <rect x="478" y="91" width="244" height="138" rx="11" fill="#07111f" stroke="#2f81f7" stroke-opacity=".45"/>
-    <g fill="#39d98a">
-      <rect x="438" y="91" width="17" height="8" rx="2"/><rect x="438" y="119" width="17" height="8" rx="2"/><rect x="438" y="147" width="17" height="8" rx="2"/><rect x="438" y="175" width="17" height="8" rx="2"/><rect x="438" y="203" width="17" height="8" rx="2"/>
-      <rect x="745" y="91" width="17" height="8" rx="2"/><rect x="745" y="119" width="17" height="8" rx="2"/><rect x="745" y="147" width="17" height="8" rx="2"/><rect x="745" y="175" width="17" height="8" rx="2"/><rect x="745" y="203" width="17" height="8" rx="2"/>
-      <rect x="505" y="51" width="8" height="17" rx="2"/><rect x="549" y="51" width="8" height="17" rx="2"/><rect x="596" y="51" width="8" height="17" rx="2"/><rect x="643" y="51" width="8" height="17" rx="2"/><rect x="687" y="51" width="8" height="17" rx="2"/>
-      <rect x="505" y="252" width="8" height="17" rx="2"/><rect x="549" y="252" width="8" height="17" rx="2"/><rect x="596" y="252" width="8" height="17" rx="2"/><rect x="643" y="252" width="8" height="17" rx="2"/><rect x="687" y="252" width="8" height="17" rx="2"/>
-    </g>
+  <g filter="url(#softGlow)">
+    <circle cx="46" cy="92" r="5" fill="#38bdf8"/>
+    <circle cx="39" cy="224" r="4" fill="#22d3ee"/>
+    <circle cx="1154" cy="76" r="5" fill="#34d399"/>
+    <circle cx="1161" cy="236" r="4" fill="#38bdf8"/>
+    <circle cx="65" cy="154" r="3.5" fill="#0ea5e9"/>
+    <circle cx="1134" cy="160" r="3.5" fill="#10b981"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="382" y="52" width="436" height="216" rx="34" fill="url(#core)" stroke="url(#edge)" stroke-width="2.5"/>
+    <rect x="405" y="75" width="390" height="170" rx="24" fill="#06101f" fill-opacity=".72" stroke="#7dd3fc" stroke-opacity=".2"/>
+  </g>
+
+  <g fill="#34d399" opacity=".9">
+    <rect x="364" y="90" width="18" height="7" rx="3.5"/><rect x="364" y="121" width="18" height="7" rx="3.5"/><rect x="364" y="152" width="18" height="7" rx="3.5"/><rect x="364" y="183" width="18" height="7" rx="3.5"/><rect x="364" y="214" width="18" height="7" rx="3.5"/>
+    <rect x="818" y="90" width="18" height="7" rx="3.5"/><rect x="818" y="121" width="18" height="7" rx="3.5"/><rect x="818" y="152" width="18" height="7" rx="3.5"/><rect x="818" y="183" width="18" height="7" rx="3.5"/><rect x="818" y="214" width="18" height="7" rx="3.5"/>
   </g>
 
   <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
-    <text x="600" y="147" fill="#f0f6fc" font-size="48" font-weight="700" letter-spacing="2">GoKo</text>
-    <text x="600" y="181" fill="#7ee2b8" font-size="17" font-weight="600" letter-spacing="4">RTOS • BSP • PORTING</text>
-    <text x="600" y="209" fill="#8bacc8" font-size="13" letter-spacing="2">FROM SILICON TO SCHEDULER</text>
+    <text x="600" y="141" fill="#f8fafc" font-size="52" font-weight="720" letter-spacing="1.5">GoKo</text>
+    <text x="600" y="179" fill="#67e8f9" font-size="18" font-weight="650" letter-spacing="4.5">RTOS • BSP • PORTING</text>
+    <text x="600" y="211" fill="#94a3b8" font-size="13" font-weight="500" letter-spacing="2.6">FROM SILICON TO SCHEDULER</text>
   </g>
 
-  <g font-family="JetBrains Mono,Consolas,monospace" font-size="16" font-weight="600">
-    <text x="75" y="66" fill="#8bacc8">RISC-V / K1</text>
-    <text x="74" y="228" fill="#8bacc8">IOMMU · GPIO · CLK</text>
-    <text x="955" y="60" fill="#8bacc8">ARMv7 / ARMv8</text>
-    <text x="980" y="235" fill="#8bacc8">I²C · I²S · CAN</text>
-    <text x="82" y="127" fill="#39d98a">IRQ</text>
-    <text x="1032" y="171" fill="#39d98a">SCHED</text>
+  <g font-family="JetBrains Mono,Consolas,monospace" font-size="15" font-weight="600">
+    <g transform="translate(78 50)"><rect width="158" height="38" rx="19" fill="#071b2f" stroke="#38bdf8" stroke-opacity=".46"/><text x="79" y="24" text-anchor="middle" fill="#bae6fd">RISC-V / K1</text></g>
+    <g transform="translate(78 230)"><rect width="196" height="38" rx="19" fill="#071b2f" stroke="#22d3ee" stroke-opacity=".36"/><text x="98" y="24" text-anchor="middle" fill="#a5f3fc">IOMMU · GPIO · CLK</text></g>
+    <g transform="translate(943 42)"><rect width="178" height="38" rx="19" fill="#08251f" stroke="#34d399" stroke-opacity=".44"/><text x="89" y="24" text-anchor="middle" fill="#a7f3d0">ARMv7 / ARMv8</text></g>
+    <g transform="translate(949 230)"><rect width="172" height="38" rx="19" fill="#071b2f" stroke="#38bdf8" stroke-opacity=".38"/><text x="86" y="24" text-anchor="middle" fill="#bae6fd">I²C · I²S · CAN</text></g>
   </g>
 
-  <rect x="1.5" y="1.5" width="1197" height="317" rx="18.5" fill="none" stroke="#2f81f7" stroke-opacity=".35" stroke-width="3"/>
+  <text x="78" y="151" fill="#34d399" font-family="JetBrains Mono,Consolas,monospace" font-size="14" font-weight="700">IRQ</text>
+  <text x="1065" y="151" fill="#34d399" font-family="JetBrains Mono,Consolas,monospace" font-size="14" font-weight="700">SCHED</text>
+  <text x="78" y="298" fill="#64748b" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.5">NORWAY • EMBEDDED SYSTEMS</text>
+
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="22.5" fill="none" stroke="url(#edge)" stroke-opacity=".45" stroke-width="3"/>
 </svg>
 
