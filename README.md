@@ -28,7 +28,7 @@ I work at the boundary between **processor architecture**, **operating-system ke
     </td>
     <td width="50%" valign="top">
       <h3>🛰️ RISC-V experience</h3>
-      <p>Nearly a year of work on <strong>RISC-V SoC development</strong>, contributing focused patches across I²C, I²S, IOMMU, pinctrl, GPIO, and clock subsystems.</p>
+      <p>A year of work on <strong>RISC-V SoC development</strong>, contributing focused patches across I²C, I²S, IOMMU, pinctrl, GPIO, and clock subsystems.</p>
     </td>
   </tr>
   <tr>
