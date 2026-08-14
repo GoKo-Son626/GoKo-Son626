@@ -7,7 +7,7 @@
 
   <p>
     <a href="https://github.com/GoKo-Son626"><img src="https://img.shields.io/badge/GitHub-GoKo--Son626-07111F?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub profile" /></a>
-    <a href="https://goku72.com"><img src="https://img.shields.io/badge/Website-goku72.com-0EA5E9?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="Personal Blog" /></a>
+    <a href="https://goku72.com"><img src="https://img.shields.io/badge/Blog-goku72.com-0EA5E9?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="Personal Blog" /></a>
     <img src="https://img.shields.io/badge/Currently-Norway-BA0C2F?style=flat-square&amp;logo=googlemaps&amp;logoColor=white" alt="Currently based in Norway" />
     <img src="https://komarev.com/ghpvc/?username=GoKo-Son626&amp;style=flat-square&amp;color=0891B2&amp;label=Profile+views" alt="Profile views" />
     <img src="https://img.shields.io/github/followers/GoKo-Son626?style=flat-square&amp;color=10B981&amp;label=Followers" alt="GitHub followers" />
