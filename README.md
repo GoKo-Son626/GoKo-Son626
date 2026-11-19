@@ -1,4 +1,4 @@
-![Tux and a Linux terminal above Earth's night side, with an RTOS scheduling trace and a small satellite in the distance](./assets/linux-workbench.webp)
+![Tux and a Linux terminal above Earth's night side, with an RTOS scheduling trace and a small satellite in the distance](./assets/linux-workbench-tux.webp)
 
 # Embedded systems & flight software
 
