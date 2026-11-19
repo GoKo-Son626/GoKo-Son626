@@ -1,4 +1,4 @@
-![GoKo at a Linux prompt, with a research satellite passing over Earth's night side](./assets/orbital-linux.webp)
+![Tux and a Linux terminal above Earth's night side, with an RTOS scheduling trace and a small satellite in the distance](./assets/linux-workbench.webp)
 
 # Embedded systems & flight software
 
@@ -47,8 +47,6 @@ Select a term in a PDF datasheet and press `Super+Shift+T` to translate it witho
 | Editors & environments | Vim, VS Code, PyCharm, Ubuntu, Windows, Android |
 
 </details>
-
-![An RTOS chip linking SpacemiT K1 RISC-V driver work and ARMv7-A Cortex-A9 porting](./assets/profile-banner.svg)
 
 ## GitHub activity
 
