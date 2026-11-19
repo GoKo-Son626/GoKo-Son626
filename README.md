@@ -4,7 +4,7 @@
 
 I'm GoKo, an RTOS developer based in Norway. I started with STM32 development and reading the FreeRTOS kernel source. During a year-long internship, I contributed small Linux driver patches for the RISC-V SoC, covering I²C, I²S, IOMMU, pin control, GPIO, and clocks.
 
-My current work involves RTOS development and porting. I am also responsible for adapting the cFE Software Bus to run on our in-house RTOS.
+My current work involves RTOS development and porting. I am also responsible for porting selected cFE modules from cFS onto our in-house RTOS.
 
 [Field notes in Chinese](https://www.goku72.com/) · Norway
 
