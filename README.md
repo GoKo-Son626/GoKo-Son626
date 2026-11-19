@@ -2,9 +2,9 @@
 
 # GoKo
 
-I read kernel code the way I read a schematic: pick a signal and follow it. In Linux or an RTOS, that might mean tracing an interrupt to the task it wakes. In flight software, I sometimes start with a timestamp and work back to the clock that produced it.
+I'm GoKo, an RTOS developer based in Norway. I started with STM32 development and reading the FreeRTOS kernel source. During a year-long internship, I contributed small Linux driver patches for the SpacemiT K1 RISC-V SoC, covering I²C, I²S, IOMMU, pin control, GPIO, and clocks.
 
-I especially enjoy bringing software up on a new board. A port makes you notice all the things the original code took for granted. I write down what I had to check for myself, especially the parts that looked obvious until I tried them.
+My current work includes RTOS porting on ARMv7-A. I'm learning ARMv8 and exploring CAN integration on an RTOS. I've also worked on getting the cFE Software Bus to run as a standalone Linux process.
 
 [Field notes in Chinese](https://www.goku72.com/) · Norway
 
