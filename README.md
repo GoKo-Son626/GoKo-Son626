@@ -48,6 +48,8 @@ Select a term in a PDF datasheet and press `Super+Shift+T` to translate it witho
 
 </details>
 
+![An RTOS chip linking SpacemiT K1 RISC-V driver work and ARMv7-A Cortex-A9 porting](./assets/profile-banner.svg)
+
 ## GitHub activity
 
 <picture>

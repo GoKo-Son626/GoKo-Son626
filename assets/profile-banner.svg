@@ -1,91 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
-  <title id="title">GoKo — RTOS, RISC-V and ARM systems developer</title>
-  <desc id="desc">A flowing dark embedded-systems banner with cyan and emerald signal paths around a central RTOS core.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="272" viewBox="0 0 1200 272" role="img" aria-labelledby="title desc">
+  <title id="title">GoKo's embedded systems: RISC-V, RTOS and ARMv7-A</title>
+  <desc id="desc">Blue signal traces connect SpacemiT K1 driver work and Cortex-A9 porting to a central RTOS chip above the curve of a planet.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#030712"/>
-      <stop offset="0.52" stop-color="#07182a"/>
-      <stop offset="1" stop-color="#0b2442"/>
+    <linearGradient id="night" x1="0" y1="0" x2="1200" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040910"/><stop offset=".46" stop-color="#0A1829"/><stop offset="1" stop-color="#102B4D"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="0.52" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#34d399"/>
-    </linearGradient>
-    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#102a46" stop-opacity=".96"/>
-      <stop offset="1" stop-color="#06101f" stop-opacity=".98"/>
-    </linearGradient>
-    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientTransform="translate(250 55) rotate(32) scale(420 240)">
-      <stop stop-color="#0ea5e9" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+    <radialGradient id="bloom" cx="0" cy="0" r="1" gradientTransform="translate(1030 278) rotate(-12) scale(540 198)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B5F98" stop-opacity=".54"/><stop offset="1" stop-color="#2B5F98" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientTransform="translate(980 260) rotate(-148) scale(390 210)">
-      <stop stop-color="#10b981" stop-opacity=".2"/>
-      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.2" fill="#7dd3fc" opacity=".11"/>
-    </pattern>
-    <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000814" flood-opacity=".55"/>
-    </filter>
+    <linearGradient id="rim" x1="120" y1="249" x2="1200" y2="165" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#244975" stop-opacity="0"/><stop offset=".55" stop-color="#4277A9"/><stop offset=".88" stop-color="#A5C8ED"/><stop offset="1" stop-color="#5899D3"/>
+    </linearGradient>
+    <linearGradient id="package" x1="455" y1="48" x2="746" y2="221" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3554"/><stop offset=".42" stop-color="#102339"/><stop offset="1" stop-color="#0B1728"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="445" y1="63" x2="750" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94B8DF"/><stop offset=".42" stop-color="#406591"/><stop offset="1" stop-color="#567FAB"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="272" rx="18"/></clipPath>
+    <path id="horizon" d="M145 346Q752 356 1228 194"/>
+    <g id="traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M291 84C342 84 349 100 389 100H431" stroke="#5685B4" stroke-width="1.7"/>
+      <path d="M271 134C332 134 355 123 396 123H431" stroke="#86B1DA" stroke-width="2.1"/>
+      <path d="M296 181C356 181 356 147 400 147H431" stroke="#5887B7" stroke-width="1.7"/>
+      <path d="M323 198C373 198 373 170 404 170H431" stroke="#3B638B" stroke-width="1.3"/>
+      <g fill="#0C1A2A" stroke="#89ADD2" stroke-width="1.6">
+        <circle cx="291" cy="84" r="3.2"/><circle cx="271" cy="134" r="4"/><circle cx="296" cy="181" r="3.2"/>
+      </g>
+    </g>
+    <g id="contacts" fill="#759AC0">
+      <rect x="428" y="97" width="20" height="6" rx="2"/><rect x="428" y="120" width="20" height="6" rx="2"/>
+      <rect x="428" y="144" width="20" height="6" rx="2"/><rect x="428" y="167" width="20" height="6" rx="2"/>
+    </g>
+    <style>
+      text { text-anchor: middle; font-family: system-ui, sans-serif; }
+      .arch { fill: #DBE9F9; font-size: 37px; font-weight: 600; }
+      .core { fill: #F1F5FB; font-size: 59px; font-weight: 650; letter-spacing: 1px; }
+      .caption, .model, .legend { font-family: ui-monospace, "DejaVu Sans Mono", monospace; }
+      .caption { fill: #C0D5EC; font-size: 17px; letter-spacing: 2px; }
+      .model { fill: #CBDEF2; font-size: 18px; }
+      .legend { fill: #A2BAD4; font-size: 15px; }
+      @media (max-width: 550px) {
+        .detail { display: none; }
+        .arch { font-size: 46px; }
+        .core { font-size: 73px; }
+        .model { font-size: 32px; }
+        .caption { font-size: 30px; letter-spacing: 1px; }
+      }
+    </style>
   </defs>
 
-  <rect width="1200" height="320" rx="24" fill="url(#background)"/>
-  <rect width="1200" height="320" rx="24" fill="url(#blueGlow)"/>
-  <rect width="1200" height="320" rx="24" fill="url(#greenGlow)"/>
-  <rect width="1200" height="320" rx="24" fill="url(#dots)"/>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="272" fill="url(#night)"/>
+    <rect width="1200" height="272" fill="url(#bloom)"/>
+    <g fill="none" stroke-linecap="round" stroke="#B8CCE4">
+      <path d="M35 73h.1m54-42h.1M223 45h.1M324 34h.1M374 70h.1M472 25h.1M688 32h.1M778 48h.1M848 26h.1M933 53h.1M1068 23h.1M1156 93h.1M39 207h.1M92 245h.1M382 222h.1M746 236h.1M863 210h.1M1178 232h.1" opacity=".44" stroke-width="1.7"/>
+      <path d="M136 45h.1M353 52h.1M797 32h.1M1116 55h.1M296 229h.1M819 228h.1" opacity=".65" stroke-width="2.5"/>
+    </g>
+    <path d="M145 346Q752 356 1228 194V360H145Z" fill="#071320"/>
+    <use href="#horizon" fill="none" stroke="url(#rim)" stroke-width="9" opacity=".12"/>
+    <use href="#horizon" fill="none" stroke="url(#rim)" stroke-width="2" opacity=".78"/>
 
-  <g fill="none" stroke-linecap="round">
-    <path d="M45 92C165 26 280 40 365 106S485 154 532 138" stroke="#38bdf8" stroke-width="2.5" opacity=".62"/>
-    <path d="M38 224C164 286 272 276 355 218S474 170 528 184" stroke="#22d3ee" stroke-width="2" opacity=".48"/>
-    <path d="M1155 76C1034 28 929 51 846 112S734 151 674 132" stroke="#34d399" stroke-width="2.5" opacity=".58"/>
-    <path d="M1162 236C1038 282 931 268 849 214S734 171 674 188" stroke="#38bdf8" stroke-width="2" opacity=".46"/>
-    <path d="M66 154C188 118 284 139 350 167S465 202 528 168" stroke="#0ea5e9" stroke-width="1.5" opacity=".32"/>
-    <path d="M1134 160C1022 122 924 137 851 166S742 200 674 166" stroke="#10b981" stroke-width="1.5" opacity=".32"/>
+    <use href="#traces"/><use href="#traces" transform="translate(1200) scale(-1 1)"/>
+    <use href="#contacts"/><use href="#contacts" transform="translate(1200) scale(-1 1)"/>
+
+    <rect x="447" y="48" width="306" height="176" rx="23" fill="#030912" opacity=".54"/>
+    <rect x="447" y="43" width="306" height="176" rx="23" fill="url(#package)" stroke="url(#bevel)" stroke-width="2"/>
+    <rect x="460" y="56" width="280" height="150" rx="14" fill="#0B1829" stroke="#345170"/>
+    <circle cx="474" cy="70" r="2.5" fill="#94B6D9"/>
+    <text class="legend detail" x="600" y="91" letter-spacing="2.9">SYSTEM CORE</text>
+    <text class="core" x="600" y="151">RTOS</text>
+    <text class="caption" x="600" y="183">BSP / PORTING</text>
+
+    <g>
+      <text class="legend detail" x="168" y="84" letter-spacing="1.7">I/O DRIVERS</text>
+      <text class="arch" x="168" y="135">RISC-V</text>
+      <rect x="66" y="148" width="204" height="39" rx="19.5" fill="#102238" stroke="#365778"/>
+      <text class="model" x="168" y="174">SpacemiT K1</text>
+      <text class="legend detail" x="168" y="213">I²C · I²S · IOMMU</text>
+    </g>
+    <g>
+      <text class="legend detail" x="1032" y="84" letter-spacing="1.7">KERNEL PORT</text>
+      <text class="arch" x="1032" y="135">ARMv7-A</text>
+      <rect x="930" y="148" width="204" height="39" rx="19.5" fill="#102238" stroke="#365778"/>
+      <text class="model" x="1032" y="174">Cortex-A9</text>
+      <text class="legend detail" x="1032" y="213">IRQ · GIC · TIMER</text>
+    </g>
   </g>
-
-  <g filter="url(#softGlow)">
-    <circle cx="46" cy="92" r="5" fill="#38bdf8"/>
-    <circle cx="39" cy="224" r="4" fill="#22d3ee"/>
-    <circle cx="1154" cy="76" r="5" fill="#34d399"/>
-    <circle cx="1161" cy="236" r="4" fill="#38bdf8"/>
-    <circle cx="65" cy="154" r="3.5" fill="#0ea5e9"/>
-    <circle cx="1134" cy="160" r="3.5" fill="#10b981"/>
-  </g>
-
-  <g filter="url(#shadow)">
-    <rect x="382" y="52" width="436" height="216" rx="34" fill="url(#core)" stroke="url(#edge)" stroke-width="2.5"/>
-    <rect x="405" y="75" width="390" height="170" rx="24" fill="#06101f" fill-opacity=".72" stroke="#7dd3fc" stroke-opacity=".2"/>
-  </g>
-
-  <g fill="#34d399" opacity=".9">
-    <rect x="364" y="90" width="18" height="7" rx="3.5"/><rect x="364" y="121" width="18" height="7" rx="3.5"/><rect x="364" y="152" width="18" height="7" rx="3.5"/><rect x="364" y="183" width="18" height="7" rx="3.5"/><rect x="364" y="214" width="18" height="7" rx="3.5"/>
-    <rect x="818" y="90" width="18" height="7" rx="3.5"/><rect x="818" y="121" width="18" height="7" rx="3.5"/><rect x="818" y="152" width="18" height="7" rx="3.5"/><rect x="818" y="183" width="18" height="7" rx="3.5"/><rect x="818" y="214" width="18" height="7" rx="3.5"/>
-  </g>
-
-  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
-    <text x="600" y="141" fill="#f8fafc" font-size="52" font-weight="720" letter-spacing="1.5">GoKo</text>
-    <text x="600" y="179" fill="#67e8f9" font-size="18" font-weight="650" letter-spacing="4.5">RTOS • BSP • PORTING</text>
-    <text x="600" y="211" fill="#94a3b8" font-size="13" font-weight="500" letter-spacing="2.6">FROM SILICON TO SCHEDULER</text>
-  </g>
-
-  <g font-family="JetBrains Mono,Consolas,monospace" font-size="15" font-weight="600">
-    <g transform="translate(78 50)"><rect width="158" height="38" rx="19" fill="#071b2f" stroke="#38bdf8" stroke-opacity=".46"/><text x="79" y="24" text-anchor="middle" fill="#bae6fd">RISC-V / K1</text></g>
-    <g transform="translate(78 230)"><rect width="196" height="38" rx="19" fill="#071b2f" stroke="#22d3ee" stroke-opacity=".36"/><text x="98" y="24" text-anchor="middle" fill="#a5f3fc">IOMMU · GPIO · CLK</text></g>
-    <g transform="translate(943 42)"><rect width="178" height="38" rx="19" fill="#08251f" stroke="#34d399" stroke-opacity=".44"/><text x="89" y="24" text-anchor="middle" fill="#a7f3d0">ARMv7 / ARMv8</text></g>
-    <g transform="translate(949 230)"><rect width="172" height="38" rx="19" fill="#071b2f" stroke="#38bdf8" stroke-opacity=".38"/><text x="86" y="24" text-anchor="middle" fill="#bae6fd">I²C · I²S · CAN</text></g>
-  </g>
-
-  <text x="78" y="151" fill="#34d399" font-family="JetBrains Mono,Consolas,monospace" font-size="14" font-weight="700">IRQ</text>
-  <text x="1065" y="151" fill="#34d399" font-family="JetBrains Mono,Consolas,monospace" font-size="14" font-weight="700">SCHED</text>
-  <text x="78" y="298" fill="#64748b" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.5">NORWAY • EMBEDDED SYSTEMS</text>
-
-  <rect x="1.5" y="1.5" width="1197" height="317" rx="22.5" fill="none" stroke="url(#edge)" stroke-opacity=".45" stroke-width="3"/>
+  <rect x=".75" y=".75" width="1198.5" height="270.5" rx="17.25" fill="none" stroke="#355171" stroke-opacity=".78" stroke-width="1.5"/>
 </svg>
 
